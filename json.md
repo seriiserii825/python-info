@@ -14,6 +14,7 @@ with open('original.json', 'r') as file:
 
     # remove
     data.pop("jkl")
+    del data['names'][1]
 
     # move
     field = data["abc"].pop("ghi")
