@@ -40,6 +40,13 @@ os.path.dirname("/path/to/file")
 # Split the path into its directory and basename
 os.path.split("/path/to/file")
 
+# list just directories
+current_dir = os.getcwd()
+parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
+dirs = next(os.walk(parent_dir))[1]
+for theme in dirs:
+    print(theme)
+
 # Get the file info
 download_dir = os.path.expanduser('~/Downloads')
 with os.scandir(download_dir) as entries:
