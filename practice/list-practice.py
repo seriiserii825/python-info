@@ -59,4 +59,16 @@ def useless(lst):
     result = max(lst) / len(lst)
     print(result)
 
-useless([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+# useless([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+def removeLettersFromArray(array, letters):
+    print(array)
+    print(letters)
+    for i in letters:
+        if i in array:
+            array.remove(i)
+    print(colored(array, "green"))
+
+removeLettersFromArray(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], ['a', 'b', 'c', 'd', 'e'])
+
+
