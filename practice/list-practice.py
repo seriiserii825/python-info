@@ -39,3 +39,13 @@ def reverseArray(array) :
     print(colored(array[::-1], "green"))
 
 # reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+def changeFirstWithLast(array):
+    if len(array) < 2:
+        print(colored('Array is too short', "red"))
+        return
+    print(array)
+    array[0], array[-1] = array[-1], array[0]
+    print(colored(array, "green"))
+
+changeFirstWithLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
