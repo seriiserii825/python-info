@@ -53,4 +53,10 @@ def changeFirstWithLast(array):
 def toList(*args):
     print(list(args))
 
-toList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+# toList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+def useless(lst):
+    result = max(lst) / len(lst)
+    print(result)
+
+useless([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
