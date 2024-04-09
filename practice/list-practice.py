@@ -32,4 +32,10 @@ def checkForLuckyBilet():
         else:
             print(colored('Not lucky bilet', "red"))
 
-checkForLuckyBilet()
+# checkForLuckyBilet()
+
+def reverseArray(array) :
+    print (array)
+    print(colored(array[::-1], "green"))
+
+# reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
