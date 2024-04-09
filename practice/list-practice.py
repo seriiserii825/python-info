@@ -69,6 +69,6 @@ def removeLettersFromArray(array, letters):
             array.remove(i)
     print(colored(array, "green"))
 
-removeLettersFromArray(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], ['a', 'b', 'c', 'd', 'e'])
+# removeLettersFromArray(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], ['a', 'b', 'c', 'd', 'e'])
 
 
