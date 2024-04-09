@@ -3,7 +3,7 @@
 from termcolor import colored
 
 def getOddNumbers():
-    s = input('Enter a list of numbers not separated by space: ').strip()
+    s = input(colored('Enter a list of numbers not separated by space: ', "green")).strip()
     l = list(s)
     l = [int(i) for i in l]
     s = [i for i in l if i % 2 != 0]
