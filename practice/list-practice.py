@@ -48,4 +48,9 @@ def changeFirstWithLast(array):
     array[0], array[-1] = array[-1], array[0]
     print(colored(array, "green"))
 
-changeFirstWithLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+# changeFirstWithLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+def toList(*args):
+    print(list(args))
+
+toList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
