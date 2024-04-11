@@ -71,4 +71,16 @@ def removeLettersFromArray(array, letters):
 
 # removeLettersFromArray(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], ['a', 'b', 'c', 'd', 'e'])
 
+def listComprehension():
+    result = [i for i in range(1, 100) if i % 6 == 0]
+    print(result)
+
+# listComprehension()
+
+def innerComprenhension():
+    result = [[i for i in range(1, 8)],  [i for i in range(1, 3)], [i for i in range(1, 9)]]
+    print(result)
+
+innerComprenhension()
+
 
