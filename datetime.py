@@ -24,3 +24,12 @@ def get_files():
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 
 get_files()
+
+
+def humanReadableTime(time):
+    hours = time // 3600
+    minutes = (time % 3600) // 60
+    seconds = time % 60
+    return f'{hours:02}:{minutes:02}:{seconds:02}'
+
+
