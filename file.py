@@ -40,6 +40,15 @@ os.path.dirname("/path/to/file")
 # Split the path into its directory and basename
 os.path.split("/path/to/file")
 
+
+# loop through file
+file1 = open('index.xml', 'r')
+Lines = file1.readlines()
+for line in Lines:
+    if '<loc>' in line:
+        url = line.split('<loc>')[1].split('</loc>')[0]
+        urls = urls + (url,)
+
 # list just directories
 current_dir = os.getcwd()
 parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
@@ -78,17 +87,6 @@ with os.scandir(basepath) as entries:
 
 # make dir
 os.mkdir('example_directory/')
-
-import shutil
-
-# Copy a file
-shutil.copy("/source/file", "/destination/file")
-
-# Move a file
-shutil.move("/source/file", "/destination/file")
-
-# Remove a file or directory
-shutil.rmtree("/path/to/directory")
 
 import glob
 
