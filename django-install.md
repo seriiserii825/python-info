@@ -23,6 +23,12 @@ pip install django
 django-admin startproject mysite
 ```
 
+### create django app
+```
+cd mysite
+python manage.py startapp polls
+```
+
 ### run django server
 ```
 cd mysite
