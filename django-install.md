@@ -32,5 +32,5 @@ python manage.py startapp polls
 ### run django server
 ```
 cd mysite
-python manage.py runserver
+python3 manage.py runserver
 ```
